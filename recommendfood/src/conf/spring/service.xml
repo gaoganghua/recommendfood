@@ -1,0 +1,53 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.1.xsd">
+	
+	<bean id="commonService" class="com.recommendfood.service.CommonService">
+		<property name="baseDao" ref="baseDao"></property>
+	</bean>
+	<bean id="foodService" class="com.recommendfood.service.FoodService">
+		<property name="dao" ref="foodDao"></property>
+	</bean>
+	<bean id="userService" class="com.recommendfood.service.UserService">
+		<property name="dao" ref="userDao"></property>
+	</bean>
+	<bean id="userCategoryService" class="com.recommendfood.service.UserCategoryService">
+		<property name="dao" ref="userCategoryDao"></property>
+	</bean>
+	<bean id="foodCategoryService" class="com.recommendfood.service.FoodCategoryService">
+		<property name="dao" ref="foodCategoryDao"></property>
+	</bean>
+	<bean id="systemCategoryService" class="com.recommendfood.service.SystemCategoryService">
+		<property name="dao" ref="systemCategoryDao"></property>
+	</bean>
+	<bean id="userCommentService" class="com.recommendfood.service.UserCommentService">
+		<property name="dao" ref="userCommentDao"></property>
+	</bean>
+	<bean id="userFavoritesService" class="com.recommendfood.service.UserFavoritesService">
+		<property name="dao" ref="userFavoritesDao"></property>
+	</bean>
+	
+	<bean id="noteService" class="com.recommendfood.service.NoteService">
+		<property name="dao" ref="noteDao"></property>
+	</bean>
+	<bean id="noteReplyService" class="com.recommendfood.service.NoteReplyService">
+		<property name="dao" ref="noteReplyDao"></property>
+	</bean>
+	<bean id="userRecommendService" class="com.recommendfood.service.UserRecommendService">
+		<property name="dao" ref="userRecommendDao"></property>
+	</bean>
+	<bean id="adminCheckService" class="com.recommendfood.service.AdminCheckService">
+		<property name="dao" ref="adminCheckDao"></property>
+	</bean>
+	<bean id="adminLogService" class="com.recommendfood.service.AdminLogService">
+		<property name="dao" ref="adminLogDao"></property>
+	</bean>
+	<bean id="userFoodThumbsupService" class="com.recommendfood.service.UserFoodThumbsupService">
+		<property name="dao" ref="userFoodThumbsupDao"></property>
+	</bean>
+</beans>

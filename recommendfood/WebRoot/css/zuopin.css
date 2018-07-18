@@ -1,0 +1,179 @@
+html,body{
+	
+	overflow-x: hidden;
+	
+}
+body {
+	width: 1600px;
+	margin-top:0;
+	margin-left: 0;
+	background-color:#373636; 
+}
+.zuopin-area-one{
+	position: relative;
+	left: 111px;
+	width: 1377px;
+	height: auto;
+	background-color: #4a4a4a;
+	margin-bottom: 59px;
+}
+.shoucang-area-one-1{
+	position: relative;
+	float: left;
+	margin-left: 86px;
+	margin-top: 62px;
+	width: 357px;
+	height: 427px;
+	background-color: #f5a623;
+}
+.shoucang-area-one-2{
+	position: relative;
+	float: left;
+	margin-left: 68px;
+	margin-top: 62px;
+	width: 357px;
+	height: 407px;
+	background-color: #f5a623;
+}
+.shoucang-area-one-3{
+	position: relative;
+	float: left;
+	margin-left: 68px;
+	margin-top: 62px;
+	width: 357px;
+	height: 407px;
+	background-color: #f5a623;
+}
+.shoucang-area-one-4{
+	position: relative;
+	float: left;
+	margin-left: 86px;
+	margin-top: 62px;
+	width: 357px;
+	height: 407px;
+	background-color: #f5a623;
+}
+.shoucang-area-one-5{
+	position: relative;
+	float: left;
+	margin-left: 68px;
+	margin-top: 62px;
+	width: 357px;
+	height: 407px;
+	background-color: #f5a623;
+}
+.pinglun-dianzan-area .shoucangfont{
+	width：100px;
+	cursor: default;
+}
+.shoucang-area-one-6{
+	position: relative;
+	float: left;
+	margin-left: 68px;
+	margin-top: 62px;
+	width: 357px;
+	height: 407px;
+	background-color: #f5a623;
+}
+
+.shoucang-area-one-1 span{
+	position: relative;
+	top: 25px;
+	margin-left: 26px;
+}
+.shoucang-area-one-2 .pinglun-buttom{
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+/*.shoucang-area-one-1 p caiming{
+	position: relative;
+	margin-left: 26px;
+	margin-top: 42px;
+	font-family: "黑体";
+	font-size: 23px;
+	color: white;
+}*/
+.caiming{
+	position: relative;
+	margin-left: 26px;
+	margin-top: 42px;
+	font-family: "黑体";
+	font-size: 23px;
+	color: white;
+	cursor: default;
+}
+.foodstyle{
+	position: relative;
+	float: right;
+	right: 25px;
+	top: -101px;
+	font-size: 14px;
+	color: white;
+	font-family: "黑体";
+}
+.pinglun-dianzan-area{
+	position: relative;
+	margin-left: 26px;
+	margin-top: -14px;
+	/*height: 20px;
+	line-height: 20px;
+	vertical-align: middle;*/
+	font-family: "黑体";
+	font-size: 9px;
+	color: white;
+
+}
+.recommend{
+	position: relative;
+	margin-left: 26px;
+	margin-top: -5px;
+	/*height: 20px;
+	line-height: 20px;
+	vertical-align: middle;*/
+	font-family: "黑体";
+	font-size: 9px;
+	color: white;
+
+}
+.pinglun-dianzan-area span{
+	padding-left: 19px;
+	padding-top: -28px;
+}
+.shoucang-area-one-2 span{
+	position: relative;
+	top: 25px;
+	margin-left: 26px;
+}
+.shoucang-area-one-3 span{
+	position: relative;
+	top: 25px;
+	margin-left: 26px;
+}
+.shoucang-area-one-4 span{
+	position: relative;
+	top: 25px;
+	margin-left: 26px;
+}
+.shoucang-area-one-5 span{
+	position: relative;
+	top: 25px;
+	margin-left: 26px;
+}
+.shoucang-area-one-6 span{
+	position: relative;
+	top: 25px;
+	margin-left: 26px;
+}
+div.getmore{
+	position:absolute;
+	bottom:50px;
+	left:600px;
+	width:200px;
+	height:50px;
+	background-color:orange;
+	color:white;
+	text-align: center;
+	/*padding-top: 20px;*/
+	font-size: 20px;
+	border-radius:10px;
+}

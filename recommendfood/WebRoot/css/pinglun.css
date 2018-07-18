@@ -1,0 +1,454 @@
+html,body{
+	
+	overflow-x: hidden;
+	
+}
+body {
+	/*height: 1768px;*/
+	width: 1600px;
+	margin-top:0;
+	margin-left: 0;
+	background-color:#373636; 
+}
+.time-area{
+	position: relative;
+	float: left;
+	left: 0;
+	width: 267px;
+	height: 1709px;
+	/*background-color: black;*/
+	margin-bottom: 59px;
+
+}
+.pinglun-area{
+	position: relative;
+	float: left;
+	left: 0px;
+	width: 1333px;
+	/*height: 1768px;*/
+	/*background-color: green;*/
+}
+.time-line{
+	position: relative;
+	left: 29px;
+	margin-top: 267px;
+	text-align: center;
+	
+
+}
+.pinglun-area-one{
+	position: relative;
+	float: left;
+	left: 0px;
+	width: 1248px;
+	height: 555px;
+	background-color: #4a4a4a;
+	/*overflow-y: scroll;*/
+	overflow: hidden;
+	/*scrollBar-face-color:black;*/
+}
+.pinglun-area-two{
+	position: relative;
+	float: left;
+	left: 0px;
+	margin-top: 22px;
+	background-color: #4a4a4a;
+	width: 1248px;
+	height: 555px;
+
+}
+.pinglun-area-three{
+	position: relative;
+	float: left;
+	left: 0px;
+	margin-top: 22px;
+	background-color: #4a4a4a;
+	width: 1248px;
+	height: 555px;
+	/*margin-bottom: 59px;*/
+
+}
+.pinglun-area-one-1{
+	position:relative;
+	float:left;
+	left: 49px;
+	width: 1199px;
+	height: 226px;
+	top: 37px; 
+	/*background-color: red;*/
+	
+
+}
+.pinglun-area-one-1-pigtu{
+	position:relative;
+	float:left;
+	left: 0px;
+	width: 226px;
+	height: 226px;
+	top: 0px; 
+
+}
+.wenzi-area{
+	position: relative;
+	float:left;
+	left: 37px;	
+	width: 487px;
+	height: 226px;
+	/*background-color: green;*/
+	top: 0px; 
+
+}
+.wenzi-area-title{
+	position:relative;
+	float:left;
+	left:0px;	
+	/*height: 226px;*/
+	top: 0px; 
+
+}
+.wenzi-area-title span{
+	font-size: 29px;
+	font-family: "黑体";
+	color: white;
+}
+.wenzi-area-title span:hover{
+	color: #f5a623;
+	cursor: default;
+
+
+}
+.wenzi-area-tag{
+	position:relative;
+	float:left;
+	left:0px;	
+	top: 23px; 
+
+}
+.wenzi-area-tag span{
+	font-size: 16px;
+	font-family: "黑体";
+	color: white;
+}
+.wenzi-area-tu{
+	position:relative;
+	float:left;
+	height: 135px;	
+	left:0px;	
+	top: 39px;
+	width: 487px;
+
+}
+.wenzi-area-tu1{
+	position:relative;
+	float:left;
+	height: 135px;	
+	left:0px;	
+	top: 0px;
+	width: 135px;
+
+}
+.wenzi-area-tu2{
+	position:relative;
+	float:left;
+	height: 135px;	
+	left:41px;	
+	top: 0px;
+	width: 135px;
+
+}
+.wenzi-area-tu3{
+	position:relative;
+	float:left;
+	height: 135px;	
+	left:82px;	
+	top: 0px;
+	width: 135px;
+
+}
+
+.xintie-area{
+	position: relative;
+	float:left;
+	left: 360px;	
+	width: 50px;
+	height: 226px;
+	/*background-color: green;*/
+	top: 0px; 
+	font-family: "黑体";
+	font-size: 16px;
+	color: #f5a623;
+
+}
+.juzi-area{
+	position: relative;
+	float:left;
+	left: 49px;	
+	top: 74px;
+	width: 1150px;
+	height: 50px;
+	/*background-color: blue;*/
+	 
+	
+
+}
+.juzi-area-tu{
+	position: relative;
+	float: left;
+	left: 0px;
+	line-height: 50px;
+	vertical-align: middle;
+	width: 48px;
+	height: 50px;
+}
+.juzi-area-wenzi{
+	position: relative;
+	float: left;
+	left: 12px;
+	width: 200px;
+	height: 50px;
+	/*background-color: red;*/
+}
+.juzi-area-name{
+	position: relative;
+	float: left;
+	left: 0px;
+	width: 200px;
+	height: 15px;
+	/*background-color: gray;*/
+	font-size: 10px;
+	color: white;
+
+}
+.juzi-area-words{
+	position: relative;
+	float: left;
+	left: 0px;
+	width: 200px;
+	height: 35px;
+	background-color: #4a90e2;
+	font-size: 16px;
+	color: white;
+	line-height: 35px;
+	vertical-align: middle;
+	border-radius: 6px;
+	text-align: center;
+
+
+}
+.caomei-area{
+	position: relative;
+	float:left;
+	left: 49px;	
+	top: 88px;
+	width: 1150px;
+	height: 50px;
+	/*background-color: blue;*/
+	 
+	
+
+}
+.caomei-area-tu{
+	position: relative;
+	float: right;
+	right: 0px;
+	line-height: 50px;
+	vertical-align: middle;
+	width: 48px;
+	height: 50px;
+}
+.caomei-area-wenzi{
+	position: relative;
+	float: right;
+	right: 12px;
+	width: 200px;
+	height: 50px;
+	/*background-color: red;*/
+}
+.caomei-area-name{
+	position: relative;
+	float: right;
+	right: 0px;
+	width: 200px;
+	height: 15px;
+	/*background-color: gray;*/
+	font-size: 10px;
+	color: white;
+
+}
+.caomei-area-words{
+	position: relative;
+	float: right;
+	right: 0px;
+	width: 200px;
+	height: 35px;
+	background-color: #4a90e2;
+	font-size: 16px;
+	color: white;
+	line-height: 35px;
+	vertical-align: middle;
+	border-radius: 6px;
+	text-align: center;
+
+
+}
+.caomei-area-words span{
+	color: #f5a623;
+}
+.caomei-area-name span{
+	position: relative;
+	float: right;
+	right: 0px;
+	/*padding-left: 120px;*/
+	
+}
+.pingguo-area{
+	position: relative;
+	float:left;
+	left: 49px;	
+	top: 102px;
+	width: 1150px;
+	height: 50px;
+	/*background-color: blue;*/
+	 
+	
+
+}
+.pingguo-area-tu{
+	position: relative;
+	float: right;
+	right: 0px;
+	line-height: 50px;
+	vertical-align: middle;
+	width: 48px;
+	height: 50px;
+}
+.pingguo-area-wenzi{
+	position: relative;
+	float: right;
+	right: 12px;
+	width: 200px;
+	height: 50px;
+	/*background-color: red;*/
+}
+.pingguo-area-name{
+	position: relative;
+	float: right;
+	right: 0px;
+	width: 200px;
+	height: 15px;
+	/*background-color: gray;*/
+	font-size: 10px;
+	color: white;
+
+}
+.pingguo-area-words{
+	position: relative;
+	float: right;
+	right: 0px;
+	width: 200px;
+	height: 35px;
+	background-color: #4a90e2;
+	font-size: 16px;
+	color: white;
+	line-height: 35px;
+	vertical-align: middle;
+	border-radius: 6px;
+	text-align: center;
+
+
+}
+.pingguo-area-words span{
+	color: #f5a623;
+}
+.pingguo-area-name span{
+	position: relative;
+	float: right;
+	right: 0px;
+	/*padding-left: 120px;*/
+	
+}
+.moredian-area{
+	position: relative;
+	float:left;
+	left: 49px;	
+	top: 119px;
+	width: 1150px;
+	height: 20px;
+	/*background-color: blue;
+*/
+}
+.moredian{
+	position: relative;
+	float: right;
+	width: 30px;
+	height: 20px;
+	right: 41px;
+	/*background-color: red;*/
+	font-size: 18px;
+	font-family: "黑体";
+	color: white;
+	padding-top: 0px;
+
+}
+.moredian span{
+	position: relative;
+	float: right;
+	right: 0px;
+}
+
+.boluo-area{
+	position: relative;
+	float:left;
+	left: 49px;	
+	top: 133px;
+	width: 1150px;
+	height: 50px;
+	/*background-color: blue;*/
+	
+
+}
+.boluo-area-tu{
+	position: relative;
+	float: left;
+	left: 0px;
+	line-height: 50px;
+	vertical-align: middle;
+	width: 48px;
+	height: 50px;
+}
+.boluo-area-wenzi{
+	position: relative;
+	float: left;
+	left: 12px;
+	width: 200px;
+	height: 50px;
+	/*background-color: red;*/
+}
+.boluo-area-name{
+	position: relative;
+	float: left;
+	left: 0px;
+	width: 200px;
+	height: 15px;
+	/*background-color: gray;*/
+	font-size: 10px;
+	color: white;
+
+}
+.boluo-area-words{
+	position: relative;
+	float: left;
+	left: 0px;
+	width: 200px;
+	height: 35px;
+	background-color: #4a90e2;
+	font-size: 16px;
+	color: white;
+	line-height: 35px;
+	vertical-align: middle;
+	border-radius: 6px;
+	text-align: center;
+
+
+}
+

@@ -1,0 +1,195 @@
+html,body{
+	width: 100%;
+	overflow-x: hidden;
+
+}
+body {
+	margin-top:0;
+	margin-left: 0;
+	background-color: #4a4a4a;
+}
+.title-area{
+	position: relative;
+	float: left;
+	margin-left: 30px;
+	width: 1390px;
+	/*background-color: green;*/
+	height: auto;
+
+}
+.title-area p{
+	font-family: "黑体";
+	font-size: 29px;
+	color: #f5a623;
+	
+}
+.title-area span{
+	font-size: 15px;
+	font-family: "黑体";
+	color: #9B9B9B;
+	vertical-align: middle;
+	padding-left: 26px;
+}
+.title-area button{
+	position: relative;
+	float: right;
+	right: 44px;
+	width: 107px;
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+	color: white;
+	font-family: "黑体";
+	outline: none;
+	background-color: #f5a623;
+	font-size: 15px;
+	margin-top: 0px;
+}
+.title-area button:hover{
+	
+	color: #373535;
+	}
+.disagreebtn{
+	margin-right: 28px;
+	background-color: #4a90e2!important;
+}
+.button-area{
+	position: relative;
+	float: left;
+	margin-left: 0px;
+	width: 1420px;
+	margin-top: 46px;
+	/*background-color: green;*/
+	height: auto;
+	height: 41px;
+	background: url(../images/check/未审核.png);
+	/*background-color: red;*/
+}
+.button-area1{
+	position: relative;
+	float: left;
+	margin-left: 0px;
+	width: 1420px;
+	margin-top: 46px;
+	/*background-color: green;*/
+	height: auto;
+	height: 41px;
+	background: url(../images/check/已审核.png);
+	/*background-color: red;*/
+}
+.table-area{
+	position: relative;
+	float: left;
+	margin-left: 0px;
+	margin-top: 0px;
+	width: 1419px;
+	/*background-color: red;*/
+	height: auto;
+}
+.table-area table{
+	border: none;
+}
+.hh{
+	width: 200px;
+	height: 1px;
+	/*list-style: dashed;*/
+}
+.xuxian{
+	position: relative;
+	float: right;
+	right: 0px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: dashed 1px white;
+	width: 1280px;
+	margin-top: 12px;
+
+}
+
+
+
+
+
+
+
+
+.table-area table td{
+	text-align: center;
+	vertical-align: middle;
+}
+.firstline{
+	font-size: 19px;
+	font-family: "黑体";
+	color: white;
+	
+}
+/*.table-area table input{
+	width: 22px;
+	height: 22px;
+	box-shadow: 1px 1px 1px 1px gray inset;
+
+	
+}*/
+
+.secondline{
+	font-size: 16px;
+	font-family: "黑体";
+	color: white;
+}
+.secondline input[type="checkbox"] {
+    position: relative;
+    left: 0;
+    right:5px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+}
+.secondline label {
+    position: relative;
+    left: 0px;
+    top: 0;
+    height: 20px;
+    line-height: 20px;
+}
+.secondline label:before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    /*border-radius: 50%;*/
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+}
+
+.secondline label:after {
+    content: '';
+    position: absolute;
+    left: -22px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: 0;
+    border-right: 1px solid #4a4a4a;
+    border-bottom: 1px solid #4a4a4a;
+   /* background: #fff;*/
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+}
+
+.secondline input[type='checkbox']:checked + label:before {
+    background: white;
+    border-color: white;
+}
+.secondline input[type='checkbox']:checked + label:after {
+    background: white;
+}

@@ -1,0 +1,513 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+/*article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}*/
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html,body{
+	overflow-x: hidden;
+}
+::-webkit-scrollbar  {  
+    width: 7px;  
+    height: 7px;  
+    background-color: #F5F5F5;  
+}  
+::-webkit-scrollbar-track  {  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  
+    border-radius: 10px;  
+    background-color: #F5F5F5;  
+}   
+::-webkit-scrollbar-thumb  {  
+    border-radius: 10px;  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
+    background-color: #555;  
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin-top: 0px;
+	margin-left: 0;
+	background-color: #373535;
+	overflow: hidden;
+}
+
+.navigation {
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 100%;
+	height: 150px;
+}
+.navigationBack {
+	position: absolute;
+	z-index: 1;
+}
+.navigationLogo {
+	position: absolute;
+	width: 113px;
+	height: 37px;
+	z-index: 2;
+	padding: 10px;
+	left: 10px;
+}
+.navigationSelect {
+	position: absolute;
+	width: 397px;
+	height: 61px;
+	right: 0px;
+	z-index: 2;
+}
+.search {
+	position: absolute;
+	width: 397px;
+	height: 60px;
+	z-index: 3;
+	top: 0px;
+	right: 0px;
+}
+.navigationInputText {
+	position: absolute;
+	width: 397px;
+	height: 60px;
+	right: 0px;
+	z-index: 3;
+}
+.navigationInputText input {
+	width: 320px;
+	height: 50px;
+	padding: 5px;
+	border: 0px solid #373535;
+	background: #373535;
+	color: #ffffff;
+	font-size: 20px;
+	outline: none;
+}
+.navigationGlass {
+	position: absolute;
+	width: 27px;
+	height: 29px;
+	z-index: 2;
+	right: 20px;
+	padding: 15px;
+	z-index: 999;
+}
+.navigationText {
+	position: absolute;
+	width: 750px;
+	height: 61px;
+	z-index: 2;
+	right: 400px;
+	padding: 21px;
+}
+.navigationText ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: inline
+}
+.navigationText li {
+	display: inline;
+	color: #ffffff;
+}
+.navigation a {
+	padding: 0 10px;
+	color: #ffffff;
+	text-decoration: none;
+	cursor: pointer;
+	/* border-right: 1px solid #ffffff; */
+}
+.navigation li:last-child a {
+	border-right: 0;
+}
+.navigation a:hover {
+	color: #000000;
+}
+
+/* 容器 <div> - 需要定位下拉内容 */
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+}
+/* 下拉内容 (默认隐藏) */
+.dropdown-content1 {
+ 	display: none;
+    position: absolute;
+    background-color: #F6A623;
+    min-width: 50px;
+    min-height: 70px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    left: 0px;
+    z-index: 4;
+}
+/* 下拉菜单的链接 */
+.dropdown-content1 a {
+    color: #ffffff;
+    padding: 10px 8px;
+    text-decoration: none;
+    display: block;
+    border-right: 0;
+    border-bottom: 1px solid #ffffff;
+}
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown1:hover .dropdown-content1 {
+    display: block;
+}
+
+/* 容器 <div> - 需要定位下拉内容 */
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+}
+/* 下拉内容 (默认隐藏) */
+.dropdown-content2 {
+ 	display: none;
+    position: absolute;
+    background-color: #F6A623;
+    min-width: 50px;
+    min-height: 50px;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    border-radius:0px 0px 5px 5px;
+    left: 0px;
+    margin-left:2px;
+    z-index: 4;
+}
+/* 下拉菜单的链接 */
+.dropdown-content2 a {
+    color: #ffffff;
+    padding: 10px 8px;
+    text-decoration: none;
+    display: block;
+    border-right: 0;
+    /*border-bottom: 1px solid #ffffff;*/
+    padding-top: 30px;
+}
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown2:hover .dropdown-content2 {
+    display: block;
+}
+
+.foodRecommend {
+	position: relative;
+	font-size: 48px;
+	font-family: "Heiti SC";
+	overflow: hidden;
+	margin-top: 670px;
+	color: #ffffff;
+	text-align: center;
+}
+.food_Recommend {
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	margin-top: 19px;
+	margin-bottom: 18px;
+}
+.food_RecommendMore {
+	position: relative;
+	overflow: hidden;
+	float: right;
+	font-family: "Heiti SC";
+	font-size: 15px;
+	margin-right: 26px;
+	margin-bottom: 22px;
+	color: #ffffff;
+	display: inline;
+	cursor: pointer;
+}
+
+.foodRecommendImg {
+	position: relative;
+	margin-top: 60px; 
+	width: 1600px;
+}
+.foodRecommendImg div {
+	display: inline;
+	padding: 0;
+	margin: 0;
+	font-size: 0;
+	z-index: 1;
+	cursor: pointer;
+}
+.foodRecommendImgBright {
+	position: absolute;
+	top: 1234px;
+	width: 1600px;
+	padding: 0;
+}
+.foodRecommendImgBright div {
+	display: inline;
+	width: 400px; 
+	/*height: 658px;*/
+	font-size: 0;
+	cursor: pointer;
+}
+.foodRecommendImg1Bright {
+	position: absolute;
+	left: 0px;
+}
+.foodRecommendImg2Bright {
+	position: absolute;
+	left: 400px;
+	width: 400px
+	height: 658px;
+}
+.foodRecommendImg3Bright {
+	position: absolute;
+	left: 800px;
+	width: 400px
+	height: 658px;
+}
+.foodRecommendImg4Bright {
+	position: absolute;
+	left: 1200px;
+	width: 400px
+	height: 658px;
+}
+#foodRecommendImg1Brightimg {
+	display: none;
+	pointer-events: none;
+}
+#foodRecommendImg2Brightimg {
+	display: none;
+	pointer-events: none;
+}
+#foodRecommendImg3Brightimg {
+	display: none;
+	/*pointer-events: none;*/
+}
+#foodRecommendImg4Brightimg {
+	display: none;
+	/*pointer-events: none;*/
+}
+.foodClass {
+	position: relative;
+	font-size: 48px;
+	font-family: "Heiti SC";
+	overflow: hidden;
+	margin-top: 56px;
+	color: #ffffff;
+	text-align: center;
+}
+.food_Class {
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	margin-top: 19px;
+	margin-bottom: 55px;
+}
+.foodClassImg {
+	position: relative;
+	background-image: url(../images/index/美食分类-背景.png);
+	width: 100%;
+	height: 649px;
+}
+.foodClassImgRow1 {
+	position: absolute;
+	width: 1220px;
+	top: 73px;
+	margin-left: 190px;
+}
+.foodClassImgRow1 div {
+	margin: 0 127px;
+}
+.foodClassImgRow1 div img{
+	position: relative;
+	z-index: 999;
+	cursor: pointer;
+}
+.foodClassImgRow1Bright {
+	position: absolute;
+	top: 50px;
+	margin-left: 190px;
+	width: 1600px;
+}
+.foodClassImgRow1Bright div {
+	display: inline-block;
+	margin:0 103px;	
+	width: 12.2%;
+}
+#foodClassImgRow1Brightimg1 {
+	display: none;
+}
+#foodClassImgRow1Brightimg2 {
+	display: none;
+}
+#foodClassImgRow1Brightimg3 {
+	display: none;
+}
+.foodClassImgText1 {
+	position: absolute;
+	top: 250px;
+	margin-left: 184px;
+	width: 1600px;
+}
+.foodClassImgText1 ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.foodClassImgText1 li {
+	display: inline;
+	color: #ffffff;
+	font-size: 24px;
+	font-family: "Heiti SC";
+	margin:0 178px;
+}
+.foodClassImgRow2 {
+	position: absolute;
+	width: 1220px;
+	bottom: 150px;
+	margin-left: 190px;
+}
+.foodClassImgRow2 div {
+	margin:0 127px
+}
+.foodClassImgRow2 div img{
+	position: relative;
+	z-index: 999;
+	cursor: pointer;
+}
+.foodClassImgRow2Bright {
+	position: absolute;
+	top: 330px;
+	margin-left: 190px;
+	width: 1600px;
+}
+.foodClassImgRow2Bright div{
+	display: inline-block;
+	margin:0 103px;	
+	width: 12.2%;
+}
+#foodClassImgRow2Brightimg1 {
+	display: none;
+}
+#foodClassImgRow2Brightimg2 {
+	display: none;
+}
+#foodClassImgRow2Brightimg3 {
+	display: none;
+}
+.foodClassImgText2 {
+	position: absolute;
+	top: 527px;
+	margin-left: 184px;
+	width: 1600px;
+}
+.foodClassImgText2 ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.foodClassImgText2 li {
+	display: inline;
+	color: #ffffff;
+	font-size: 24px;
+	font-family: "Heiti SC";
+	margin:0 178px;
+}
+.foodClassImgRow1 div{
+	display: inline;
+}
+.foodClassImgRow2 div{
+	display: inline;
+}
+
+.foodZone {
+	position: relative;
+	font-size: 48px;
+	font-family: "Heiti SC";
+	overflow: hidden;
+	margin-top: 56px;
+	color: #ffffff;
+	text-align: center;
+}
+.food_Zone {
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	margin-top: 19px;
+	margin-bottom: 18px;
+}
+.food_ZoneMore {
+	position: relative;
+	overflow: hidden;
+	float: right;
+	font-family: "Heiti SC";
+	font-size: 15px;
+	margin-right: 26px;
+	margin-bottom: 22px;
+	color: #ffffff;
+	display: inline;
+	cursor: pointer;
+}
+
+.merchantRecommend {
+	position: relative;
+	font-size: 48px;
+	font-family: "Heiti SC";
+	overflow: hidden;
+	margin-top: 56px;
+	color: #ffffff;
+	text-align: center;
+}
+.merchant_Recommend {
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	margin-top: 19px;
+	margin-bottom: 18px;
+}
+.merchant_RecommendMore {
+	position: relative;
+	overflow: hidden;
+	float: right;
+	font-family: "Heiti SC";
+	font-size: 15px;
+	margin-right: 26px;
+	margin-bottom: 22px;
+	color: #ffffff;
+	display: inline;
+	cursor: pointer;
+}

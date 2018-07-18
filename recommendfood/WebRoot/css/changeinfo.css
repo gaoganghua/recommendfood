@@ -1,0 +1,797 @@
+/* HTML5 display-role reset for older browsers */
+html,body{
+	width: 100%;
+	overflow-x: hidden;
+	
+}
+body {
+	margin-top:0;
+	margin-left: 0;
+	overflow-x: hidden;
+	/*background-color: #373636;*/
+}
+
+.wholeback{
+	background-repeat:no-repeat;
+	position: relative;	
+	margin: 0 auto;
+	background-color: #373636;
+	width: 1600px;	
+	overflow: hidden;	
+	z-index: 4;
+	height: 1500px;
+	margin-bottom: 59px;
+}
+.work-area{
+	background-repeat:no-repeat;
+	overflow: hidden;
+	position: relative;	
+	left: 247px;
+	margin-top: 75px;
+	height: 1005px;
+	background-color: #4a4a4a;
+	width: 1106px;
+	z-index: 5;
+	margin-bottom: 59px;
+
+}
+.putwork{
+	/*overflow: auto;*/
+	position: relative;
+	left: 58px;
+	width: 712px;
+	/*background-color: red;*/
+	z-index: 6;
+	margin-top: 33px;
+	/*padding-top: 33px;*/
+}
+
+.putwork-title{
+	display: inline;
+	/*background-color: green;*/
+	font-size: 29px;
+	font-family: "黑体";
+	color: #f5a623;
+	/*margin-top: 233px;*/
+	z-index: 7;
+
+
+}
+.puwork-sentence{
+
+	bottom: 4px; 
+	display: inline;
+	/*background-color: blue;*/
+	position: relative;
+	left: 26px;
+	font-size: 15px;
+	font-family: "黑体";
+	color: #9B9B9B;
+	z-index: 7
+}
+
+.title-style{
+	position: relative;
+	left: 58px;
+	width: 520px;
+	/*height: 24px;*/	
+	/*background-color: green;	*/
+	margin-top: 61px;
+
+}
+
+.title-style p{
+	font-size: 19px;
+	font-family: "黑体";
+	/*color: #f5a623；*/
+
+}
+.title-style span{
+	font-size: 15px;
+	font-family: "黑体";
+	color: #9B9B9B;
+	left: 30px;
+	padding-left: 30px;
+
+}
+.title-style-input{
+	position: relative;
+	left: 58px;
+	width: 352px;
+	/*height: 24px;*/	
+	/*background-color: green;	*/
+	margin-top: 18px;
+
+
+}
+.title-style-input input{
+	width: 352px;
+	height: 46px;
+	border: 1px solid #f5a623;
+	font-family: "黑体";
+	font-size: 15px;
+	color: #9B9B9B;
+	outline: none;
+	background-color: transparent;
+}
+
+
+.per-style{
+	position: relative;
+	left: 58px;
+	width: 520px;
+	/*height: 24px;*/	
+	/*background-color: green;	*/
+	margin-top: 18px;
+
+}
+.per-style p{
+	font-size: 19px;
+	font-family: "黑体";
+	/*color: #f5a623；*/
+
+}
+.per-style span{
+	font-size: 15px;
+	font-family: "黑体";
+	color: #9B9B9B;
+	left: 30px;
+	padding-left: 30px;
+
+}
+.per-style-input{
+	position: relative;
+	left: 58px;
+	width: 707px;
+	/*height: 24px;*/	
+	/*background-color: green;*/	
+	margin-top: 18px;
+
+
+}
+.per-style-input input{
+	width: 707px;
+	height: 46px;
+	border: 1px solid #f5a623;
+	font-family: "黑体";
+	font-size: 15px;
+	color: #9B9B9B;
+	outline: none;
+	background-color: transparent;
+}
+.head-picture-area{
+	position: relative;
+	float: right;
+	margin-right: 101px;
+	margin-top: 0px;
+	/*background-color: red;*/
+	width: 177px;
+	height: 177px;
+
+
+
+}
+.change-bt-area{
+	position: relative;
+	float: right;
+	margin-right: -146px;
+	margin-top: 236px;
+	/*background-color: blue;*/
+	width: 116px;
+	height: 37px;
+
+}
+.change-bt-area button{
+	width: 116px;
+	height: 37px;
+	border-radius: 5px;
+	background-color: #f5a623;
+	border: none;
+	font-family: "黑体";
+	color: white;
+	font-size:16px;
+	outline: none;
+
+}
+.change-bt-area button:hover{
+	color: #373636;
+
+}
+.tag-style{
+	position: relative;
+	left: 58px;
+	width: 820px;
+	/*height: 24px;*/	
+	/*background-color: green;*/	
+	margin-top: 18px;
+
+}
+.tag-style p{
+	font-size: 19px;
+	font-family: "黑体";
+	/*color: #f5a623；*/
+
+}
+.tag-style span{
+	font-size: 15px;
+	font-family: "黑体";
+	color: #9B9B9B;
+	left: 30px;
+	padding-left: 30px;
+
+}
+.birthday-style-area{
+	position: relative;
+	left: 58px;
+	width: 520px;
+	height: 46px;	
+	/*background-color: green;	*/
+	margin-top: 18px;
+
+}
+.birthday-style-area select{
+	border: solid 1px #f5a623;
+	background: transparent;
+	width: 116px;
+	height: 46px;
+	color: #9B9B9B;
+	font-size: 15px;
+	outline: none;
+	font-family: "黑体";
+	appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: url("../images/change/Triangle.png")
+   no-repeat scroll right 5px center transparent;
+
+
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+  padding-right: 10px;
+}
+
+
+
+.select-atyle{
+	position: relative;
+	float: left;
+	margin-left: 0px;
+}
+
+.select-atyle option{
+	background-color: #4a4a4a;
+}
+.select2-atyle option{
+	background-color: #4a4a4a;
+}
+.select3-atyle option{
+	background-color: #4a4a4a;
+}
+.select4-atyle option{
+	background-color: #4a4a4a;
+}
+.select2-atyle{
+	position: relative;
+	float: left;
+	margin-left: 32px;
+}
+.select3-atyle{
+	width: 81px !important;
+	margin-left: 32px;
+}
+.select4-atyle{
+	width: 81px !important;
+	margin-left: 25px;
+}
+.jieshao-style{
+	position: relative;
+	left: 58px;
+	width: 820px;
+	height: 24px;	
+	/*background-color: green;	*/
+	margin-top: 18px;
+}
+.jieshao-style p{
+	font-size: 19px;
+	font-family: "黑体";
+	/*color: #f5a623；*/
+
+}
+.jieshao-style span{
+	font-size: 15px;
+	font-family: "黑体";
+	color: #9B9B9B;
+	left: 30px;
+	padding-left: 30px;
+
+}
+/*.password-area{
+	display: none;
+	position: relative;
+	left: 56px;
+	width: 925px;
+	padding-left: 5px;
+	height: 55px;	
+	line-height: 47px;
+	vertical-align: middle;
+	background: url(../images/change/密码-窄.png);
+	background-color: green;	
+	margin-top: 18px;
+	z-index: 9;
+}*/
+/*.jiantou{
+	position: relative;
+	background-repeat: no-repeat;
+	float: right;
+	margin-right: 30px;
+	margin-top: 21px;
+	background-color: green;
+	width: 11px;
+	height: 8px;
+	background: url(../images/change/向下.png);
+	cursor: pointer;
+}*/
+/*.jiantou:hover{
+	background: url(../images/change/向下-黄.png);
+	cursor: pointer;
+}*/
+/*.password-area p{
+	font-size: 19px;
+	font-family: "黑体";
+	float: left;
+	margin-left: 5px;
+	margin-top: 1px;
+	color: #f5a623；
+
+}
+.password-area span{
+	font-size: 15px;
+	font-family: "黑体";
+	color: #9B9B9B;
+	left: 30px;
+	padding-left: 30px;
+
+}
+.hhhh{
+	position: relative;
+	float: right;
+	right: 30px;
+}*/
+
+
+
+.password-area-1{
+	/*display: none;*/
+	position: relative;
+	left: 56px;
+	width: 925px;
+	/*padding-left: 5px;*/
+	height: 288px;	
+	line-height: 47px;
+	vertical-align: middle;
+	/*background: url(../images/change/密码-宽.png);*/
+	/*background-color: green;	*/
+	margin-top: 18px;
+	z-index: 9;
+}
+.jiantou-1{
+	position: relative;
+	background-repeat: no-repeat;
+	float: right;
+	margin-right: 30px;
+	margin-top: 21px;
+	/*background-color: green;*/
+	width: 11px;
+	height: 8px;
+	/*background: url(../images/change/向上.png);*/
+	cursor: pointer;
+}
+/*.jiantou-1:hover{
+	background: url(../images/change/向上-黄.png);
+	cursor: pointer;
+}*/
+.password-area-1{
+	height:auto;
+}
+.password-area-1 p{
+	font-size: 19px;
+	font-family: "黑体";
+	float: left;
+	margin-left: 5px;
+	margin-top: 1px;
+	/*color: #f5a623；*/
+
+}
+.password-area-1 span{
+	font-size: 15px;
+	font-family: "黑体";
+	color: #9B9B9B;
+	left: 30px;
+	padding-left: 30px;
+
+}
+.old-password{
+	position: relative;
+	float: left;
+	margin-left: -294px;
+	margin-top: 14px;
+	width: 917px;
+	height: 46px;
+	/*background-color: red;*/
+}
+.old-password input{
+	position: relative;
+	float: left;
+	margin-left: 0px;
+	margin-top: 0px;
+	width: 465px;
+	height: 44px;
+	background-color: transparent;
+	border: 1px solid #f5a623;
+	outline: none;
+	font-size: 15px;
+	font-family: "黑体";
+	color: #9B9B9B;
+	padding-left: 12px;
+
+}
+.old-password span{
+	position: relative;
+	float: left;
+	font-family: "黑体";
+	color: white;
+	font-size: 12px;
+	left: 30px;
+	/*background-color: blue;*/
+	padding-left: 0px;
+	height: 46px;
+	width: 90px;
+}
+.new-password{
+	position: relative;
+	float: left;
+	margin-left: 4px;
+	margin-top: 9px;
+	width: 917px;
+	height: 46px;
+	/*background-color: red;*/
+}
+
+.new-password input{
+	position: relative;
+	float: left;
+	margin-left: 0px;
+	margin-top: 0px;
+	width: 465px;
+	height: 44px;
+	background-color: transparent;
+	border: 1px solid #f5a623;
+	outline: none;
+	font-size: 15px;
+	font-family: "黑体";
+	color: #9B9B9B;
+	padding-left: 12px;
+
+}
+.new-password span{
+	position: relative;
+	float: left;
+	font-family: "黑体";
+	color: white;
+	font-size: 12px;
+	left: 30px;
+	/*background-color: blue;*/
+	padding-left: 0px;
+	height: 46px;
+	width: 130px;
+}
+.password-btn-area{
+	position: relative;
+	float: left;
+	margin-left: 4px;
+	margin-top: 16px;
+	width: 917px;
+	height: 33px;
+	/*background-color: red;*/
+}
+.ok-btn{
+	position: relative;
+	float: left;
+	margin-left: 12px;
+	margin-top: 0px;
+	width: 62px;
+	height: 33px;
+	
+}
+.ok-btn button{
+	position: relative;
+	float: left;
+	margin-left: 0px;
+	margin-top: 0px;
+	width: 62px;
+	height: 33px;
+	background-color: #f5a623;
+	border: none;
+	font-family: "黑体";
+	font-size: 12px;
+	color: white;
+	outline: none;
+}
+.ok-btn button:hover{
+	
+	color: #373636;
+	
+}
+.cancel-btn{
+	position: relative;
+	float: left;
+	margin-left: 14px;
+	margin-top: 0px;
+	width: 62px;
+	height: 34px;
+	
+}
+.cancel-btn button{
+	position: relative;
+	float: left;
+	margin-left: 0px;
+	margin-top: 0px;
+	width: 62px;
+	height: 34px;
+	background:transparent;
+	border: none;font-family: "黑体";
+	font-size: 12px;
+	color: white;
+	outline: none;
+}
+.cancel-btn button:hover{
+	color: black;
+
+}
+
+.ok{
+	 
+	position: relative;
+	float:left;
+	top: 50px;
+	left: 58px;
+	width: 820px;
+	height: 61px;
+/*	background-color: green;*/
+	
+}
+.ok1{
+	position: relative;
+	float: left;
+	margin-left: 0px;
+	margin-top:10px;
+	/*background-color: blue;*/
+	width: 175px;
+	height: 61px;
+}
+.ok1 button{
+	font-family: "黑体";
+	font-size: 18px;
+	color: white;
+	border: none;
+	background: #f5a623;
+	width: 175px;
+	outline: none;
+	height: 61px;
+
+
+}
+.ok1 button:hover{
+
+	color: #373636;
+	cursor:pointer;
+	
+
+
+}
+.cancel1{
+	width: 175px;
+	height: 61px;
+	/*background-color: blue;*/
+	position: relative;
+	float: left;
+	left: 1px;
+	top:10px;
+}
+.cancel1 button{
+	border: none;
+	width: 175px;
+	height: 61px;
+	outline: none;
+	background: transparent;
+	font-family: "黑体";
+	font-size: 18px;
+	color: white;
+}
+.cancel1 button:hover{
+
+	/*color: #373636;*/
+	color: black;
+	cursor:pointer;
+	
+
+
+}
+.changeheadpic{
+	position: absolute;
+	margin-left: 453px;
+	margin-top: -1500px;
+	z-index: 2000;
+	width: 590px;
+	height: 691px;
+	background-color: #4a4a4a;
+	border:1px solid #f5a623;
+
+}
+.changeheadpic-title{
+	position: absolute;
+	margin-top: 0px;
+	width: 590px;
+	height: 78px;
+	line-height: 78px;
+	vertical-align: middle;
+	background-color: #f5a623;
+}
+.a-1{
+	position: absolute;
+	left: 32px;
+	font-family: "黑体";
+	font-size: 29px;
+	color: white;
+}
+.a-2{
+	position: absolute;
+	right: 38px;
+	font-family: "黑体";
+	font-size: 29px;
+	color: white;
+	cursor: pointer;
+}
+.changeheadpic-btn-select{
+	position: absolute;
+	width: 590px;
+	height: 48px;
+	margin-top: 98px;
+}
+/*.changeheadpic-btn-cancel{
+	position: absolute;
+	width: 590px;
+	height: 48px;
+	margin-top: 98px;
+	margin-right: 10px;
+}*/
+.changeheadpic-btn-cancel{
+	position: absolute;
+	margin-left: 171px;
+	z-index: 101;
+	height: 48px;
+	width: 108px;
+	/*background-color: #f5a623;
+	font-family: "黑体";
+	font-size: 15px;
+	color: white;
+	outline: none;
+	border: none;
+	text-align: center;*/
+}
+.changeheadpic-btn-cancel input{
+	position: absolute;
+	left: 32px;
+
+	width: 108px;
+	height: 48px;
+	background-color: #f5a623;
+	font-family: "黑体";
+	font-size: 15px;
+	color: white;
+	outline: none;
+	border: none;
+}
+.changeheadpic-btn-cancel span{
+	margin-top: 10px;
+	
+}
+.changeheadpic-btn-select a .userphoto{
+	position: absolute;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.changeheadpic-btn-select a.upload{
+	position: relative;
+    /*border: 0px solid #999;*/
+    text-decoration: none;
+    color: #666;
+}
+.changeheadpic-btn-select a input{
+	position: absolute;
+	left: 32px;
+
+	width: 108px;
+	height: 48px;
+	background-color: #f5a623;
+	font-family: "黑体";
+	font-size: 15px;
+	color: white;
+	outline: none;
+	border: none;
+}
+/*.changeheadpic-btn-cancel span{
+	position: absolute;
+	background-color: #f5a623;
+	font-family: "黑体";
+	font-size: 15px;
+	color: white;
+	outline: none;
+	border: none;
+}*/
+.changeheadpic-btn-select button:hover{
+	color: #373636;
+
+}
+.pic-area{
+	position: absolute;
+	width: 281px;
+	height: 281px;
+	background-color: #4a4a4a;
+	margin-top: 183px;
+	margin-left: 155px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 15px 2px #373636 inset;
+	
+}
+.words-area{
+	position: absolute;
+	width: 590px;
+	/*height: 48px;*/
+	/*background-color: white;*/
+	margin-top: 494px;
+	text-align: center;	
+	font-family: "黑体";
+	font-size: 17px;
+	color: #9B9B9B;
+}
+.changeheadpic-btn-save{
+	position: absolute;
+	width: 590px;
+	height: 56px;
+	/*background-color: white;*/
+	margin-top: 601px;
+	}
+.changeheadpic-btn-save button{
+	position: absolute;
+	width: 143px;
+	height: 56px;
+	background-color: #f5a623;
+	font-family: "黑体";
+	font-size: 17px;
+	color: white;
+	outline: none;
+	border: none;
+	left: 224px;
+}
+.changeheadpic-btn-save button:hover{
+	color: #373636;
+
+}
+.black_over{ 
+            display: none; 
+            position: absolute; 
+            top: 0%; 
+            left: 0%; 
+            margin:0 auto;
+            width: 100%; 
+            height: 1560px; 
+            background-color: black; 
+            z-index:1001; 
+            -moz-opacity: 0.8; 
+            opacity:.50; 
+            filter: alpha(opacity=88); 
+        }

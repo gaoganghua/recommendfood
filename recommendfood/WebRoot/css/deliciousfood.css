@@ -1,0 +1,540 @@
+/* HTML5 display-role reset for older browsers */
+html,body{
+	width: 100%;
+	overflow-x: hidden;
+
+}
+body {
+	margin-top:0;
+	margin-left: 0;
+}
+.navigationSelect {
+	position: absolute;
+	right: 0;
+	width: 397px;
+	height: 61px;
+	/*padding-right: 0px;*/
+	z-index: 2;
+}
+.navigationInputText {
+	position: absolute;
+	padding-top: 15px;
+	width: 397px;
+	height: 60px;
+	right: 0px;
+	z-index: 3;
+}
+.navigationInputText input {
+	width: 320px;
+	height: 23px;
+	padding: 5px;
+	border: 1px solid #373535;
+	background: #373535;
+	color: #ffffff;
+	font-size: 20px;
+	outline: none;
+}
+
+.navigationGlass {
+	position: absolute;
+	width: 27px;
+	height: 29px;
+	z-index: 11;
+	right: 15px;
+	padding: 15px;
+}
+.search{
+	display: inline;
+	position: relative;
+	float: left;
+	left: 0;
+	background-repeat:no-repeat;	
+	/*overflow: hidden;*/
+	margin: 0 auto;	
+	width: 397px;
+	height: 61px;
+}
+
+
+.navigation a {
+	padding: 0 10px;
+	color: #ffffff;
+	text-decoration: none;
+	/*border-right: 1px solid #ffffff;*/
+}
+.navigation a:hover {
+	cursor: pointer;
+	color: #000000;
+}
+.navigationText ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: inline
+}
+.navigationText li {
+	display: inline;
+	color: white;
+	font-family: "黑体";
+	font-size: 17px;
+}
+.navigationText {
+	position: absolute;
+	width: 700px;
+	height: 61px;
+	z-index: 2;
+	right: 20px;
+	padding: 21px;
+}
+.navigationLogo {
+	position: absolute;
+	width: 113px;
+	height: 37px;
+	z-index: 11;
+	padding: 10px;
+	left: 10px;
+}
+.navigationBack {
+	position: absolute;
+	z-index: 1;
+}
+.navigation {
+	display: inline;	
+	background-repeat:no-repeat;
+	position: relative;
+	float: left;
+	left: 0;
+	overflow: hidden;
+	/*margin: 0 auto;*/
+	width: 1203px;
+	height: 61px;
+}
+.navigation-search{
+	background-repeat:no-repeat;
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 1600px;
+	height: 61px;
+}
+.wholeback{
+	background-repeat:no-repeat;
+	position: relative;	
+	margin: 0 auto;
+	background-color: #4a4a4a;
+	width: 1600px;
+	/*height: auto;*/
+	/*top: 10px;*/
+	overflow: hidden;
+	/*height: 100%;*/
+	z-index: 0;
+}
+
+
+.niuroumian-pic{
+	position: relative;
+	float: left;
+	margin-top: 0px;
+	margin-left: 0px;
+	height: 599px;
+	width: 1600px;
+	/*background: url(../images/deliciousfood/banner.png);*/
+	z-index:1;
+}
+.dianzan-area{
+	position: relative;
+	float: left;
+	margin-left: 76px;
+	margin-top: -80px;
+	height: 24px;
+	width:62px;
+	z-index:2000;
+	color:#f5a623;
+	
+
+}
+.shoucang-area{
+	position: relative;
+	float: left;
+	margin-left: 165px;
+	margin-top: -76px;
+	height: 24px;
+	width: 62px;
+	color:#f5a623;
+	z-index:2000;
+
+}
+.shicai-title{
+	position: relative;
+	float: left;
+	width: 1538px;
+	margin-left: 152px;
+	margin-top: 21px;
+	/*background-color: red;*/
+	color: #f5a623;
+	font-family: "黑体";
+	font-size: 19px;
+}
+.shicai-area{
+	position: relative;
+	float: left;
+	margin-top: 32px;
+	width: 606px;
+	height: 334px;
+	margin-left: 501px;
+	background: url(../images/deliciousfood/配料背景.png);
+}
+.shicai-area-2{
+	position: relative;
+	float: left;
+	margin-top: 18px;
+	width: 606px;
+	height: 334px;
+	margin-left: 501px;
+	background: url(../images/deliciousfood/配料背景.png);
+
+
+}
+.tiaoliao-area{
+	position: relative;
+	float: left;
+	left: 179px;
+	/*background-color: red;*/
+	width: 78px;
+	height: 324px;
+	margin-top: 2px;
+
+}
+
+.tiaoliaozi{
+	/*background-color: green;*/
+	text-align: center;
+	margin-top: 14px;
+	font-size: 19px;
+	font-family: "黑体";
+	color: white;
+}
+.tiaoliao-input-one{
+	/*background-color: blue;*/
+	
+
+}
+.outputarea{
+	width: 78px;
+	height: 20px;
+	text-align: center;
+	font-family: "黑体";
+	font-size: 16px;
+	color: white;
+	background: transparent;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 2px dashed white;
+	padding-top: 11px;
+	/*padding-bottom: 2px;*/
+}
+
+
+.shuliang-area2{
+	position: relative;
+	float: left;
+	left: 310px;
+	width: 78px;
+	height: 324px;
+	margin-top: 2px;
+	/*background-color: red;*/
+	z-index: 17
+
+}
+.shuliangzi2{
+	width: 110px;
+	margin-left: -12px;
+	/*background-color: green;*/
+	text-align: center;
+	margin-top: 14px;
+	font-size: 19px;
+	font-family: "黑体";
+	color: white;
+	z-index: 18;
+
+}
+.shuliang-input-one2{
+	/*background-color: blue;*/
+}
+.shuliang-input-one2 input{
+	width: 78px;
+	height: 20px;
+	text-align: center;
+	font-family: "黑体";
+	font-size: 16px;
+	color: white;
+	background: transparent;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 2px dashed white;
+	padding-top: 11px;
+
+}
+
+
+
+
+.peiliao-area2{
+	position: relative;
+	float: left;
+	left: 51px;
+	/*background-color: red;*/
+	width: 59px;
+	
+	margin-top: 114px;
+}
+.peiliao-area2 span{
+	padding-left: 10px;
+	font-family: "黑体";
+	font-size: 19px;
+	color: white;
+	line-height: 60px;
+}
+
+
+
+
+
+.zhuliao-area{
+	position: relative;
+	float: left;
+	left: 51px;
+	/*background-color: red;*/
+	width: 59px;
+	
+	margin-top: 114px;
+}
+.zhuliao-area span{
+	padding-left: 10px;
+	font-family: "黑体";
+	font-size: 19px;
+	color: white;
+	line-height: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.buzhou-title{
+	position: relative;
+	float: left;
+	width: 1538px;
+	margin-left: 152px;
+	margin-top: 55px;
+	/*background-color: red;*/
+	color: #f5a623;
+	font-family: "黑体";
+	font-size: 19px;
+
+}
+.step-1-title{
+	position: relative;
+	float: left;
+	width: 1538px;
+	margin-left: 152px;
+	margin-top: 25px;
+	/*background-color: red;*/
+	
+}
+.step-1-word{
+	position: relative;
+	float: left;
+	margin-left: 152px;
+	margin-top: 25px;
+	/*background-color: red;*/
+	color: white;
+	font-family: "黑体";
+	font-size: 10px;
+
+}
+.step-1-pic{
+	position: relative;
+	float: left;
+	margin-left: 152px;
+	margin-top: 25px;
+	width: 1296px;
+	height: 497px;
+	background-color: red;
+
+
+	
+}
+.pinglun-title{
+	position: relative;
+	float: left;
+	width: 1538px;
+	margin-left: 152px;
+	margin-top: 55px;
+	/*background-color: red;*/
+	color: #f5a623;
+	font-family: "黑体";
+	font-size: 19px;
+
+}
+.pinglun-area-area{
+	position: relative;
+	float: left;
+	margin-left: 152px;
+	margin-top: 25px;
+	width: 1538px;
+	height: 190px;
+	/*background-color: red;*/
+
+}
+.pinglun-area-area textarea{
+	position: relative;
+	float: left;
+	margin-left: 17px;
+	width: 1205px;
+	height: 169px;
+	line-height: 16px;
+
+	background: transparent;
+	color: #9B9B9B;
+	font-size: 14px;
+	padding-top: 16px;
+	padding-left: 16px;
+	font-family: "黑体";
+	border: 1px solid #f5a623;
+	outline: none;
+	
+}
+.image-area{
+	position: relative;
+	float: left;
+	margin-left: 0px;
+	width: 58px;
+	height: 185px;
+	/*background-color: green;*/
+}
+.btn-area-hh{
+	position: relative;
+	float: left;
+	width: 1296px;
+	height: 37px;
+	margin-left: 152px;
+	margin-top: 17px;
+	/*background-color: red;*/
+	
+}
+.btn-area-hh button{
+	position: relative;
+	float: right;
+	right: 17px;
+	width: 116px;
+	height: 37px;
+	outline: none;
+	border: none;
+	font-family: "黑体";
+	color: white;
+	font-size: 16px;
+	background-color: #f5a623;
+}
+.btn-area-hh button:hover{
+	color: #373636;
+}
+.juzi-area-hh{
+	position: relative;
+	float: left;
+	width: 1296px;
+	height: 48px;
+	margin-left: 152px;
+	margin-top: 37px;
+	/*background-color: red;*/
+	
+	
+}
+.qita-area-hh{
+	position: relative;
+	float: left;
+	width: 1296px;
+	margin-left: 152px;
+	margin-top:14px;
+	/*background-color: red;*/
+	
+	height: 48px;
+}
+.nicheng-pic{
+	position: relative;
+	float: left;
+	margin-left: 0px;
+	width: 48px;
+	height: 48px;
+	
+	margin-top:0px;
+	/*background-color:blue;*/
+
+}
+.nicheng{
+	color: white;
+	font-family: "黑体";
+	font-size: 10px;
+	position: relative;
+	float: left;
+	margin-left: 12px;
+	width: 1200px;
+	height: 18px;
+	
+	margin-top: 0px;
+	/*background-color: red;*/
+	
+
+}
+.words{
+	color: white;
+	font-family: "黑体";
+	font-size: 14px;
+	position: relative;
+	float: left;
+	margin-left: 12px;
+	margin-top: 0px;
+	/*width: 100px;*/
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+	border-radius: 5px;
+	text-align: center;
+	margin-top: 0px;
+	background-color: #4a90e2;
+
+}
+.qita-area-hh-last{
+	position: relative;
+	float: left;
+	width: 1296px;
+	height: 48px;
+	margin-left: 152px;
+	margin-top: 14px;
+	margin-bottom: 59px;
+
+}
+
+.searchresult{
+	background-color:#f5a623;
+	position:absolute;
+	bottom:10px;
+	left:600px;
+	width:200px;
+	height:50px;
+	color:white;
+	text-align: center;
+	font-size: 20px;
+	padding-top:8px;
+	border-radius:10px;
+	margin-top: 500px;
+}

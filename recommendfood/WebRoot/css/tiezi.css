@@ -1,0 +1,22 @@
+html,body{	
+	overflow-x: hidden;
+}
+body {
+	width: 1600px;
+	margin-top:0;
+	margin-left: 0;
+	background-color:#373636; 
+
+	overflow: hidden;
+	height: 1333px;
+}
+.tiezi-area-one{
+	position: relative;
+	left: 176px;
+	width: 1248px;
+	height: 1333px;
+	/*background-color: #4a4a4a;*/
+	margin-bottom: -12px;
+
+}
+

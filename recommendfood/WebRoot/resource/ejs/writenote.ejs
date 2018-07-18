@@ -1,0 +1,9 @@
+<div class="row notes">
+	<br>
+	<div class="col-md-7 strong title" id='<%=data.id%>'>
+		<a href="commoncommunity/community!noteInfo?noteId=<%=data.id%>">【<%=data.title%>】</a>
+	</div>
+	<div class="col-md-2 text-center btm2">评论量：<%=data.commentTotal%></div>
+	<div class="col-md-2 pull-left btm" ><%=data.noteTime%></div>
+	<div class="col-md-1 pull-right" ><button class="btn btn-default delbtn" onclick="delbtnOption(this)">删除</button></div>
+</div>

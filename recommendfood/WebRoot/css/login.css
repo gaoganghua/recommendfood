@@ -1,0 +1,154 @@
+html,body{
+	width: 100%;
+	overflow-x: hidden;
+
+}
+body {
+	margin-top:0;
+	margin-left: 0;
+}
+.whole{
+	width: 1600px;
+	height: 900px;
+	margin: 0 auto;
+	background: url(../images/login/背景.png);
+}
+.login-area{
+	position: absolute;
+	margin-top: 267px;
+	width: 541px;
+	height: 407px;
+	background: url(../images/login/登录.png);
+	margin-left: 529px;	
+}
+.first-input{
+	position: relative;
+	margin-left: 70px;
+	margin-top: 101px;
+	width: 400px;
+	height: 42px;
+	background-image: url(../images/login/输入框.png);
+
+}
+.first-input input{
+	position: relative;
+	width: 400px;
+	height: 42px;
+	background: transparent;
+	border: none;
+	outline: none;
+	padding-left: 23px;
+	color: #4A4A4A;
+	font-size: 13px;
+	font-family: "黑体";
+}
+.second-input{
+	position: relative;
+	margin-left: 70px;
+	margin-top: 51px;
+	width: 400px;
+	height: 42px;
+	background-image: url(../images/login/输入框.png);
+}
+.second-input input{
+	position: relative;
+	width: 400px;
+	height: 42px;
+	background: transparent;
+	border: none;
+	outline: none;
+	padding-left: 23px;
+	color: #4A4A4A;
+	font-size: 13px;
+	font-family: "黑体";
+}
+
+
+.forget-area{
+	position: relative;
+	float: left;
+	width: 427px;
+	margin-top: 24px;
+	margin-left: 58px;
+	
+}
+.none-number{
+	position: relative;
+	float:left;
+	margin-left: 0px;
+	color: #9B9B9B;
+	font-size: 14px;
+	font-family: "黑体";
+	cursor: default;
+}
+.register{
+	position: relative;
+	float:left;
+	margin-left: 0px;
+	color: #f5a623;
+	font-size: 14px;
+	font-family: "黑体";
+	cursor: default;
+	
+}
+.forget{
+	float: right;
+	margin-left: 0px;
+	color: #f5a623;
+	font-size: 14px;
+	font-family: "黑体";
+	padding-left: 0px;
+	cursor: default;
+
+
+}
+.btn-area{
+	position: relative;
+	float: left;
+	margin-top: 10px;
+	width: 427px;
+	height: 50px;
+	margin-left: 58px;
+	text-align: center;
+}
+.btn-area button{
+	width: 162px;
+	height: 50px;
+	outline: none;
+	border-radius:25px;
+	color: white;
+	font-family: "黑体";
+	font-size: 19px;
+	background-color: #f5a623;
+	border: none;
+	/*background-image: url(../images/确认.png);*/
+}
+.btn-area button:hover{
+	color: #373636;
+}
+
+.three-input {
+	position: relative;
+	margin-left: 150px;
+	margin-top: 30px;
+	height: 30px;
+}
+.three-input span {
+	postion: relative;
+	color: white;
+	font-size: 20px;
+	height: 30px;
+	padding: 10px;
+}
+.three-input input {
+	position: relative;
+	width: 100px;
+	height: 30px;
+	margin-left: 10px;
+	background-color: rgb(177, 177, 177);
+	border:0px;
+	border-radius:20px 20px 20px 20px;
+	outline: none;
+	text-align: center;
+	vertical-align: middle
+}

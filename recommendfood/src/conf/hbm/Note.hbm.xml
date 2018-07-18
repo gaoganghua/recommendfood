@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+<class name="com.recommendfood.model.Note" table="note" >
+	<id name="id" column="id" type="java.lang.Long">
+		<generator class="native"></generator>
+	</id>
+	<property name="title" column="title" type="java.lang.String"></property>
+	<property name="userId" column="user_id" type="java.lang.Long"></property>
+	<property name="noteMsg" column="note_msg" type="java.lang.String"></property>
+	<property name="noteTime" column="note_time" type="java.util.Date"></property>
+	<property name="commentTotal" column="comment_total" type="java.lang.Integer"></property>
+	<property name="upvoteTotal" column="upvote_total" type="java.lang.Integer"></property>
+</class>
+</hibernate-mapping> 
+

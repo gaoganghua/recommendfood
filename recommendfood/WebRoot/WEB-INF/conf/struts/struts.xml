@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true" /> 
+	<constant name="struts.i18n.encoding" value="utf-8"/>
+	<constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
+	<constant name="struts.multipart.maxSize" value="10240000"/>	
+	<constant name="struts.multipart.saveDir" value="/temp"/>
+<!-- 	<constant name="struts.objectFactory" value="org.apache.struts2.spring.StrutsSpringObjectFactory" /> -->
+<!-- 	<constant name="struts.custom.i18n.resources" value="global" /> -->
+  	<include file="struts-default.xml"></include> 
+  	<include file="struts-plugin.xml"></include> 
+  	
+  	<include file="struts-manager.xml"></include>
+  	<include file="struts-community.xml"></include>
+  	
+ 	<package name="main" namespace="/" extends="json-default">
+ 		<interceptors>
+ 			<interceptor name="loginInterceptor" class="com.recommendfood.interceptor.LoginInterceptor"></interceptor>
+ 			<interceptor name="xssInterceptor" class="com.recommendfood.interceptor.XssInterceptor"></interceptor>
+ 			<interceptor-stack name="interceptor-stack">
+ 				<interceptor-ref name="xssInterceptor"></interceptor-ref>
+ 				<interceptor-ref name="defaultStack"></interceptor-ref>
+ 			</interceptor-stack>
+ 		</interceptors>
+ 		<default-interceptor-ref name="interceptor-stack"></default-interceptor-ref>
+ 		<default-action-ref name="index"></default-action-ref>
+ 		
+		<global-results>
+ 			<result name="exceptions">/user/error.jsp</result>
+ 			<result name="login">/user/login.jsp</result>
+ 			<result name="admin">/user/admin.jsp</result>
+ 			<result name="user">/user/usercenter.jsp</result>
+ 		</global-results>
+ 		<global-allowed-methods>regex:.*</global-allowed-methods>
+		<global-exception-mappings>
+			<exception-mapping result="exceptions" exception="Exception"></exception-mapping>
+		</global-exception-mappings>
+ 		
+ 		
+		<action name="test">
+			<result>/user/test.jsp</result>
+		</action>
+		<!-- 注册登录类 -->
+		<action name="login" class="com.recommendfood.action.LoginAction">
+			<interceptor-ref name="fileUpload"></interceptor-ref>
+			<interceptor-ref name="interceptor-stack"></interceptor-ref>
+			<result name="loginpage">/user/login.jsp</result>
+			<result name="loginout" type="redirectAction">index</result>
+			<result name="registerpage">/user/register.jsp</result>
+			<result name="safecode" type="json">
+				<param name="root">jsondata</param>
+			</result>
+			<result name="loginin" type="json">
+				<param name="root">jsondata</param>
+			</result>
+			<result name="register" type="json">
+				<param name="root">jsondata</param>
+			</result>
+<!-- 			<result name="loginout">/user/login.jsp</result> -->
+		</action>
+		
+		<!-- 加载信息类 -->
+		<action name="loaddata" class="com.recommendfood.action.LoadDataAction">
+			<interceptor-ref name="interceptor-stack"></interceptor-ref>
+			<result  name="loadday" type="json">
+				<param name="root">jsondata</param>
+			</result>
+			<result  name="loadcity" type="json">
+				<param name="root">jsondata</param>
+			</result>
+			<result  name="loadprovice" type="json">
+				<param name="root">jsondata</param>
+			</result>
+		</action>
+		<!-- 首页 -->
+		<action name="index">
+			<result>/user/firstIndex.jsp</result>
+		</action>
+ 	</package>
+
+</struts>

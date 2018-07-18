@@ -1,0 +1,27 @@
+<% if(data!=null && data!=''){%>
+	<div class="row contentrow" name='<%=data.id%>'>
+		<div class="col-md-3">
+			<div class="col-md-8"><img src="<%=data.userPic%>" width="100%" height="100px"></div>
+			<div class="col-md-8 text-center"><%=data.userName%></div>
+			<div class="col-md-8 text-center"><%=data.floorNumber%>楼</div>
+		</div>
+		<div class="col-md-9 text">
+			<div class="col-md-12 content">
+				<%=data.replyMsg%>
+			</div>
+		</div>
+		<div class="col-md-12 btm1">
+			<%=data.replyTime%>
+			&nbsp&nbsp<a href="javascript:void(0)" onclick="bindClick1(this)" name="0">回复</a>
+		</div>
+		<div class="col-md-6  pull-right replydiv" style="display: none">
+			<div class="col-md-9">
+				<input type="text" placeholder="请输入" name="replyinput" class="form-control replyinput">
+			</div>
+			<button class="btn btn-default col-md-3" name="sreplybtn" style="background-color:#777" onclick="sreplyClick(this)">发表</button>
+			<br><br>
+		</div>
+	</div>
+<%}%>
+
+    	

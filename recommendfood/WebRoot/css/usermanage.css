@@ -1,0 +1,323 @@
+html,body{
+	width: 100%;
+	overflow-x: hidden;
+
+}
+body {
+	margin-top:0;
+	margin-left: 0;
+	background-color: #4a4a4a;
+}
+.title-area{
+	position: relative;
+	float: left;
+	margin-left: 30px;
+	width: 1390px;
+	/*background-color: green;*/
+	height: auto;
+}
+.title-area p{
+	font-family: "黑体";
+	font-size: 29px;
+	color: #f5a623;
+}
+.title-area span{
+	font-size: 15px;
+	font-family: "黑体";
+	color: #9B9B9B;
+	vertical-align: middle;
+	padding-left: 26px;
+}
+.button-area{
+	position: relative;
+	float: left;
+	margin-left: 31px;
+	width: 1389px;
+	margin-top: 46px;
+	/*background-color: green;*/
+	height: auto;
+}
+.button-area button{
+	width: 107px;
+	height: 40px;
+	border-radius: 5px;
+	background-color: #f5a623;
+	border: none;
+	color: white;
+	outline: none;
+	font-family: "黑体";
+	font-size: 15px;
+}
+.button-area button:hover{
+	
+	color: #373535;
+	}
+.stopbtn{
+	margin-left: 28px;
+	background-color: #4a90e2!important;
+}
+.sousuo-area input{
+	position: relative;
+	float: left;
+	left: 0px;
+	margin-top: 3px;
+	width: 200px;
+	height: 34px;
+	outline: none;
+	border: solid 1px #9B9B9B;
+	background: transparent;
+	font-size: 15px;
+	font-family: "黑体";
+	color: #6e6b6b;
+	
+}
+.sousuo-area{
+	position: relative;
+	float: right;
+	margin-right: 25px;
+	height: 40px;
+	width: 261px;
+	/*background-color: red;*/
+	z-index: 4;
+	background-color: #9B9B9B;
+	/*background: url(../images/user/搜索框.png);*/
+}
+.table-area{
+	position: relative;
+	float: left;
+	margin-left: 0px;
+	margin-top: 16px;
+	width: 1419px;
+	/*background-color: red;*/
+	height: auto;
+}
+.table-area table{
+	border: none;
+}
+
+.table-area table tr{
+	height: 57px;
+	
+}
+.table-area table td{
+	text-align: center;
+	vertical-align: middle;
+}
+.firstline{
+	font-size: 19px;
+	font-family: "黑体";
+	color: white;
+	background-color: #f5a623
+}
+.firstline input[type='checkbox'] {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    
+}
+.firstline label {
+    position: relative;
+    left: 5px;
+    top: 0;
+    height: 20px;
+    line-height: 20px;
+}
+.firstline label:before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    /*border-radius: 50%;*/
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+}
+
+.firstline label:after {
+    content: '';
+    position: absolute;
+    left: -22px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: 0;
+    border-right: 1px solid #f5a623;
+    border-bottom: 1px solid #f5a623;
+   /* background: #fff;*/
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+}
+
+.firstline input[type='checkbox']:checked + label:before {
+    background: white;
+    border-color: white;
+}
+.firstline input[type='checkbox']:checked + label:after {
+    background: white;
+}
+
+.table-area table input{
+	width: 22px;
+	height: 22px;
+	box-shadow: 1px 1px 1px 1px gray inset;
+
+	
+}
+.qi{
+	color: #f5a623!important;
+	margin-left: 8px;
+	cursor: default;
+}
+.jin{
+	color: white!important;
+	margin-left: 8px;
+	cursor: default;
+}
+.secondline{
+	font-size: 16px;
+	font-family: "黑体";
+	color: white;
+}
+.secondline input[type='checkbox'] {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    z-index: 100;
+}
+.secondline label {
+    position: relative;
+    top:-6px;
+    left: 6px;
+    height: 20px;
+    line-height: 20px;
+    z-index: 99;
+}
+.secondline label:before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    /*border-radius: 50%;*/
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+}
+
+.secondline label:after {
+    content: '';
+    position: absolute;
+    left: -22px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: 0;
+    border-right: 1px solid #4a4a4a;
+    border-bottom: 1px solid #4a4a4a;
+   /* background: #fff;*/
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+}
+
+.secondline input[type='checkbox']:checked + label:before {
+    background: white;
+    border-color: white;
+    margin-top: 2px;
+}
+.secondline input[type='checkbox']:checked + label:after {
+    background: white;
+}
+
+.queryimg {
+	float: right;
+}
+.page {
+	positiion: absolute;
+	width: 1200px;
+	margin-top: 50px;
+	height: 30px;
+}
+.firstpage {
+	display: inline;
+	margin-left: 500px;
+	cursor: pointer;
+	color: rgb(74,74,74);
+	background-color: rgb(222,222,222);
+	border-radius:5px 5px 5px 5px;
+	width: 200px;
+	height: 30px;
+	font-size: 20px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);	
+}
+.firstpage:hover {
+
+}
+.uppage {
+	display: inline;
+	margin-left: 30px;
+	cursor: pointer;
+	background-color: rgb(222,222,222);
+	border-radius:5px 5px 5px 5px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	font-size: 20px;
+}
+.currentpage {
+	display: inline;
+	margin-left: 30px;
+	color: white;
+	cursor: default;
+	font-size: 20px;
+}
+.totalpage {
+	display: inline;
+	margin-left: 30px;
+	color: white;
+	cursor: default;
+	font-size: 20px;
+}
+.totalnum {
+	display: inline;
+	margin-left: 30px;
+	color: white;
+	cursor: default;
+	font-size: 20px;
+}
+.downpage {
+	display: inline;
+	margin-left: 30px;
+	cursor: pointer;
+	background-color: rgb(222,222,222);
+	border-radius:5px 5px 5px 5px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	font-size: 20px;
+}
+.endpage {
+	display: inline;
+	margin-left: 30px;
+	cursor: pointer;
+	background-color: rgb(222,222,222);
+	border-radius:5px 5px 5px 5px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	font-size: 20px;
+}

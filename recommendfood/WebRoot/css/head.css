@@ -1,0 +1,106 @@
+.navigationSelect {
+	position: absolute;
+	right: 0;
+	width: 397px;
+	height: 61px;
+	z-index: 2;
+}
+.navigationInputText {
+	position: absolute;
+	padding-top: 15px;
+	width: 397px;
+	height: 60px;
+	right: 0px;
+	z-index: 3;
+}
+.navigationInputText input {
+	width: 320px;
+	height: 23px;
+	padding: 5px;
+	border: 1px solid #373535;
+	background: #373535;
+	color: #ffffff;
+	font-size: 20px;
+	outline: none;
+}
+
+.navigationGlass {
+	position: absolute;
+	width: 27px;
+	height: 29px;
+	z-index: 11;
+	right: 15px;
+	padding: 15px;
+}
+.search{
+	display: inline;
+	position: relative;
+	float: left;
+	left: 0;
+	background-repeat:no-repeat;	
+	margin: 0 auto;	
+	width: 397px;
+	height: 61px;
+}
+
+
+.navigation a {
+	padding: 0 10px;
+	color: #ffffff;
+	text-decoration: none;
+	transition:0.3s;
+}
+.navigation a:hover {
+	color: #000000;
+	
+}
+.navigationText ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: inline
+}
+.navigationText li {
+	display: inline;
+	color: white;
+	font-family: "黑体";
+	font-size: 17px;
+}
+.navigationText {
+	position: absolute;
+	width: 770px;
+	height: 61px;
+	z-index: 2;
+	right: 20px;
+	padding: 21px;
+}
+.navigationLogo {
+	position: absolute;
+	width: 113px;
+	height: 37px;
+	z-index: 11;
+	padding: 10px;
+	left: 10px;
+}
+.navigationBack {
+	position: absolute;
+	z-index: 1;
+}
+.navigation {
+	display: inline;	
+	background-repeat:no-repeat;
+	position: relative;
+	float: left;
+	left: 0;
+	overflow: hidden;
+	width: 1203px;
+	height: 61px;
+}
+.navigation-search{
+	background-repeat:no-repeat;
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 1600px;
+	height: 61px;
+}

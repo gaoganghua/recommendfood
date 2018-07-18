@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+<class name="com.recommendfood.model.User" table="user" >
+	<id name="id" column="id" type="java.lang.Long">
+		<generator class="native"></generator>
+	</id>
+	<property name="loginName" column="login_name" type="java.lang.String"></property>
+	<property name="loginPassword" column="login_password" type="java.lang.String"></property>
+	<property name="photo" column="photo" type="java.lang.String"></property>
+	<property name="phone" column="phone" type="java.lang.String"></property>
+	<property name="email" column="email" type="java.lang.String"></property>
+	<property name="status" column="status" type="java.lang.Integer"></property>
+	<property name="userType" column="user_type" type="java.lang.Integer"></property>
+	<property name="address" column="address" type="java.lang.String"></property>
+	<property name="notes" column="notes" type="java.lang.String"></property>
+	<property name="birth" column="birth" type="java.util.Date"></property>
+</class>
+</hibernate-mapping>
+

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true" /> 
+	<constant name="struts.i18n.encoding" value="utf-8"/>
+<!-- 	<constant name="struts.multipart.maxSize" value="10240000"/>	 -->
+<!-- 	<constant name="struts.multipart.saveDir" value="/temp"/> -->
+<!-- 	<constant name="struts.objectFactory" value="org.apache.struts2.spring.StrutsSpringObjectFactory" /> -->
+<!-- 	<constant name="struts.custom.i18n.resources" value="global" /> -->
+  	<include file="struts-default.xml"></include> 
+  	<include file="struts-plugin.xml"></include> 
+  	
+	<package name="manager" namespace="/systemmanager" extends="json-default">
+		<interceptors>
+ 			<interceptor name="loginInterceptor" class="com.recommendfood.interceptor.LoginInterceptor"></interceptor>
+ 			<interceptor name="xssInterceptor" class="com.recommendfood.interceptor.XssInterceptor"></interceptor>
+ 			<interceptor-stack name="interceptor-stack">
+ 				<interceptor-ref name="xssInterceptor"></interceptor-ref>
+ 				<interceptor-ref name="defaultStack"></interceptor-ref>
+ 			</interceptor-stack>
+ 		</interceptors>
+ 		<default-interceptor-ref name="interceptor-stack"></default-interceptor-ref>
+ 		<default-action-ref name="index"></default-action-ref>
+		<global-results>
+ 			<result name="exceptions">/user/error.jsp</result>
+ 			<result name="login">/user/login.jsp</result>
+ 			<result name="admin">/user/admin.jsp</result>
+ 			<result name="user">/user/usercenter.jsp</result>
+ 			<result name="loginajax" type="json">
+ 				<param name="root">jsondata</param>
+ 			</result>
+ 		</global-results>
+ 		<global-allowed-methods>regex:.*</global-allowed-methods>
+ 		<global-exception-mappings>
+			<exception-mapping result="exceptions" exception="Exception"></exception-mapping>
+		</global-exception-mappings>
+
+<!-- 		<action name="recommendfood"> -->
+<!-- 			<result>/user/recommendfood.jsp</result> -->
+<!-- 		</action> -->
+<!-- 		<action name="usercenter"> -->
+<!-- 			<result>/user/usercenter.jsp</result> -->
+<!-- 		</action> -->
+
+		<action name="community" class="com.recommendfood.action.CommunityAction">
+			<result name="success">/user/community/index.jsp</result>
+		</action>
+
+		<!-- 管理员界面 -->
+		<action name="adminmanager" class="com.recommendfood.action.AdminManagerAction">
+			<interceptor-ref name="loginInterceptor"></interceptor-ref>
+			<interceptor-ref name="interceptor-stack"></interceptor-ref>
+			<result name="usercontrol">/user/usercontrol.jsp</result>
+			<result name="reviewfood">/user/check.jsp</result>
+			<result name="admincheck" type="redirectAction">reviewfood</result>
+			<result name="changeuserstatus" type="json">
+				<param name="root">jsondata</param>
+			</result>
+		</action>
+		<action name="reviewfood" class="com.recommendfood.action.AdminManagerAction" method="reviewFood">
+			<interceptor-ref name="loginInterceptor"></interceptor-ref>
+			<interceptor-ref name="interceptor-stack"></interceptor-ref>
+			<result name="reviewfood">/user/check.jsp</result>
+		</action>
+		<!-- 普通用户中心 -->
+		<action name="usercenteraction" class="com.recommendfood.action.UserCenterAction">
+			<interceptor-ref name="fileUpload"></interceptor-ref>
+			<interceptor-ref name="loginInterceptor"></interceptor-ref>
+			<interceptor-ref name="interceptor-stack"></interceptor-ref>
+			<result name="success">/user/usercenter.jsp</result>
+			<result name="modifyuser">/user/modifyuserinfo.jsp</result>
+			<result name="modifyphoto" type="json">
+				<param name="root">jsondata</param>
+			</result>
+			<result name="favorites">/user/shoucang.jsp</result>
+			<result name="usernotes">/user/tiezi.jsp</result>
+			<result name="usercomments">/user/pinglun.jsp</result>
+			<result name="userrecommends">/user/zuopin.jsp</result>
+			<result name="usercommendsajax" type="json">
+				<param name="root">jsondata</param>
+			</result>
+			<result name="modify" type="json">
+				<param name="root">jsondata</param>
+			</result>
+		</action>
+		<!-- 普通用户的ajax -->
+		<action name="usercenterajax" class="com.recommendfood.action.UserCenterAjaxAction">
+			<interceptor-ref name="loginInterceptor"></interceptor-ref>
+			<interceptor-ref name="interceptor-stack"></interceptor-ref>
+			<result name="userthumbsup" type="json">
+				<param name="root">jsondata</param>
+			</result>
+			<result name="userthumbsupcancel" type="json">
+				<param name="root">jsondata</param>
+			</result>
+			<result name="favoritecancel" type="json">
+				<param name="root">jsondata</param>
+			</result>
+			<result name="userfavorites" type="json">
+				<param name="root">jsondata</param>
+			</result>
+			<result name="modifypassword" type="json">
+				<param name="root">jsondata</param>
+			</result>
+			<result name="checkpassword" type="json">
+				<param name="root">jsondata</param>
+			</result>
+			<result name="usercomment" type="json">
+				<param name="root">jsondata</param>
+			</result>
+			<result name="loginajax" type="json">
+				<param name="root">jsondata</param>
+			</result>
+		</action>
+		<!-- 美食类 -->
+		<action name="foodaction" class="com.recommendfood.action.FoodAction">
+			<interceptor-ref name="fileUpload"></interceptor-ref>
+<!-- 			<interceptor-ref name="loginInterceptor"></interceptor-ref> -->
+			<interceptor-ref name="interceptor-stack"></interceptor-ref>
+			<result name="success">/user/food.jsp</result>
+			<result name="recommendfoodpage">/user/recommendfood.jsp</result>
+			<result name="searchfood">/user/searchresult.jsp</result>
+			<result name="foodinfo">/user/foodinfo.jsp</result>
+			
+			<result name="recommendfood" type="redirectAction">usercenteraction</result>
+			
+		</action>
+		<!-- 美食操作类 -->
+		<action name="loadfoodaction" class="com.recommendfood.action.FoodAction">
+			<interceptor-ref name="interceptor-stack"></interceptor-ref>
+			<result  name="loadfoodcategory" type="json">
+				<param name="root">jsondata</param>
+			</result>
+		</action>
+		
+		
+		
+ 	</package>
+ 	
+    <!-- Add packages here -->
+
+</struts>

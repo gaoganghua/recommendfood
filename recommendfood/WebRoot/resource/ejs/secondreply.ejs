@@ -1,0 +1,22 @@
+<div class="col-md-11 pull-right secondreply">
+	<div class="col-md-4">
+		<div class="col-md-2"><img src='<%=data.userPic%>' width="20px" height="20px"></div>
+		<div class="col-md-10">
+			<font class="replyUserId" id='<%=data.userId%>' name='<%=data.userName%>'>
+				<%=data.userName%>
+			</font>
+			<% if(data.respUserId!='0'){%>
+				@<%=data.respNoteUserName%>
+			<%}%>
+		：</div>
+	</div>
+	<div class="col-md-5">
+		<div class="col-md-12 secondreplycontent">
+			<%=data.replyMsg%>
+		</div>
+	</div>
+	<div class="col-md-3 pull-right btm2" style="text-align: right">
+		<%=data.replyTime%>
+		&nbsp&nbsp<a href="javascript:void(0)" onclick="bindClick(this)" name="0">回复</a>
+	</div>
+</div>

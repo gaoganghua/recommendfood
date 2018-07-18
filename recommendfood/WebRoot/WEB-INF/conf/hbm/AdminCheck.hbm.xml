@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+<class name="com.recommendfood.model.AdminCheck" table="admin_check" >
+	<id name="id" column="id" type="java.lang.Long">
+		<generator class="native"></generator>
+	</id>
+	<property name="recommendId" column="recommend_id" type="java.lang.Long"></property>
+	<property name="checkInfo" column="check_info" type="java.lang.Integer"></property>
+	<property name="checkTime" column="check_time" type="java.util.Date"></property>
+</class>
+</hibernate-mapping> 
+

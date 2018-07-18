@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true" /> 
+	<constant name="struts.i18n.encoding" value="utf-8"/>
+	<constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
+<!-- 	<constant name="struts.multipart.maxSize" value="10240000"/>	 -->
+<!-- 	<constant name="struts.multipart.saveDir" value="/temp"/> -->
+<!-- 	<constant name="struts.objectFactory" value="org.apache.struts2.spring.StrutsSpringObjectFactory" /> -->
+<!-- 	<constant name="struts.custom.i18n.resources" value="global" /> -->
+  	<include file="struts-default.xml"></include> 
+  	<include file="struts-plugin.xml"></include> 
+  	
+  	
+<!--   	<include file="struts-manager.xml"></include> -->
+	
+	<!-- 通用配置 -->
+<!-- 	<package name="common" abstract="true" extends="json-default"> -->
+<!-- 		<interceptors> -->
+<!--  			<interceptor name="loginInterceptor" class="com.common.interceptor.LoginInterceptor"></interceptor> -->
+<!--  			<interceptor name="xssInterceptor" class="com.common.interceptor.XssInterceptor"></interceptor> -->
+<!--  			<interceptor-stack name="interceptor-stack"> -->
+<!--  				<interceptor-ref name="loginInterceptor"></interceptor-ref> -->
+<!--  				<interceptor-ref name="xssInterceptor"></interceptor-ref> -->
+<!--  				<interceptor-ref name="defaultStack"></interceptor-ref> -->
+<!--  			</interceptor-stack> -->
+<!--  		</interceptors> -->
+<!--  		<default-interceptor-ref name="interceptor-stack"></default-interceptor-ref> -->
+ 		
+<!-- 		<global-results> -->
+<!--  			<result name="exceptions">/user/common/error.jsp</result> -->
+<!--  			<result name="data">/user/common/data.jsp</result> -->
+<!--  			<result name="login">/user/login.jsp</result> -->
+<!--  		</global-results> -->
+<!-- 		<global-exception-mappings> -->
+<!-- 			<exception-mapping result="exceptions" exception="Exception"></exception-mapping> -->
+<!-- 		</global-exception-mappings> -->
+<!-- 	</package> -->
+	
+ 	<package name="main" namespace="/" extends="json-default">
+ 		<interceptors>
+ 			<interceptor name="loginInterceptor" class="com.common.interceptor.LoginInterceptor"></interceptor>
+ 			<interceptor name="xssInterceptor" class="com.common.interceptor.XssInterceptor"></interceptor>
+ 			<interceptor-stack name="interceptor-stack">
+<!--  				<interceptor-ref name="loginInterceptor"></interceptor-ref> -->
+ 				<interceptor-ref name="xssInterceptor"></interceptor-ref>
+ 				<interceptor-ref name="defaultStack"></interceptor-ref>
+ 			</interceptor-stack>
+ 		</interceptors>
+ 		<default-interceptor-ref name="interceptor-stack"></default-interceptor-ref>
+ 		<default-action-ref name="index"></default-action-ref>
+ 		
+		<global-results>
+ 			<result name="exceptions">/user/common/error.jsp</result>
+ 			<result name="data">
+ 					/user/common/data.jsp
+<!--  				<param name="root">result</param> -->
+<!--  				<param name="location">/user/common/data.jsp</param> -->
+ 			</result>
+ 			<result name="login">/user/login.jsp</result>
+ 		</global-results>
+<!--  		<global-allowed-methods>regex:.*</global-allowed-methods> -->
+		<global-exception-mappings>
+			<exception-mapping result="exceptions" exception="Exception"></exception-mapping>
+		</global-exception-mappings>
+ 		
+ 		
+		<action name="firstAction" class="firstAction">
+			<result>/user/index.jsp</result>
+		</action>
+		<action name="indexAction" class="indexAction">
+			<result name="levelbook">/user/index/levelbook.jsp</result>
+			<result name="booktype">/user/index/booktype.jsp</result>
+		</action>
+		<action name="loadAction" class="loadAction">
+			<result type="json">
+				<param name="root">jsondata</param>
+			</result>
+		</action>
+		<action name="login" class="login">
+			<result>/user/login.jsp</result>
+		</action>
+		<action name="index">
+			<result name="success">/user/index.jsp</result>
+		</action>
+ 	</package>
+
+</struts>
